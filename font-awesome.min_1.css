@@ -1,0 +1,27 @@
+/* 1. IMPORTAR FUENTE ELEGANTE Y FUTURISTA (Rajdhani de Google Fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;600;700&display=swap');
+
+/* 2. APLICAR LA FUENTE AL SITIO (Sin romper los iconos) */
+body, h1, h2, h3, h4, h5, h6, p, span, a, li, 
+input, select, textarea, button, .title, .Ilabel {
+    /* 'Rajdhani' es técnica pero muy elegante y legible */
+    font-family: 'Rajdhani', sans-serif !important;
+    letter-spacing: 0.5px; /* Un poco de aire da elegancia */
+}
+
+/* 3. MEJORAR LA RENDERIZACIÓN DE LOS ICONOS (Font Awesome) */
+/* Esto hace que los iconos se vean más nítidos y brillantes sin cambiar su fuente */
+.fa {
+    font-family: 'FontAwesome' !important; /* FORZAMOS QUE NO CAMBIE */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Un brillo sutil para que combinen con el estilo Neon */
+    text-shadow: 0 0 8px rgba(0, 255, 238, 0.3);
+    transition: all 0.3s ease;
+}
+
+/* Efecto elegante al pasar el mouse sobre cualquier icono */
+.fa:hover {
+    transform: scale(1.1);
+    text-shadow: 0 0 12px rgba(0, 255, 238, 0.6);
+}
